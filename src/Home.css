@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=La+Belle+Aurore&display=swap');
+.home{
+    background-image: url('https://images.unsplash.com/photo-1481833761820-0509d3217039?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner{
+    font-family: 'Dancing Script', cursive;
+}
+.cartMenu{
+    background-color: black;
+    width: 400px;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: -150%;
+    transition: 850ms ease-in-out;
+}
+.cartMenu.active{
+    right: 0;
+    transition: 450ms ease-in-out;
+}
