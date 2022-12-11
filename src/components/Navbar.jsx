@@ -15,7 +15,9 @@ function Navbar() {
     <nav className="xs:bg-black xs:w-full lg:bg-transparent sticky top-1 w-full flex flex-row mb-[200px] p-5 ">
       <div className="xs:w-1/2 w-1/2 h-full flex flex-row">
         <div className="w-1/12 h-10 flex justify-center items-center">
-          <FaIcons.FaCoffee className="text-white text-[20px]" />
+          <Link to="/">
+            <FaIcons.FaCoffee className="text-white text-[20px] hover:text-[30px]" />
+          </Link>
         </div>
 
         <h1 className="text-xl font-bold text-white m-1">The Coffee Shop</h1>
