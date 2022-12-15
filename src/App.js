@@ -1,8 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import SinglePost from "./components/SinglePost";
-import MultiPost from "./components/MultiPost";
+// import SinglePost from "./components/SinglePost";
+// import MultiPost from "./components/MultiPost";
+import MultiPost from './pages/home';
+import SinglePost from './pages/item'
 function App() {
   return (
     <BrowserRouter>

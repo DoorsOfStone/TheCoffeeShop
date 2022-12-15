@@ -4,8 +4,9 @@ import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import { Link } from "react-router-dom";
 import "../Home.css";
-import MultiPost from "./MultiPost";
 import CartItemCard from "./CartItemCard";
+import Cart from "../pages/cart"
+
 function Navbar() {
   // I use usestate to hoid the state of my cart menu
   //  add a link to "The Coffee Shop" back to home page
@@ -37,10 +38,11 @@ function Navbar() {
             </div>
             <div className="w-full p-1 h-full flex flex-col ">
               {/* ofcouse once i figure out of to pass the data from the single page component to display on the cart than i will just map through, this is only for a visual placehoder for now */}
+              {/* <CartItemCard />
               <CartItemCard />
               <CartItemCard />
-              <CartItemCard />
-              <CartItemCard />
+              <CartItemCard /> */}
+              <Cart />
             </div>
           </div>
         </div>

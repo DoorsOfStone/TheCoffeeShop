@@ -1,15 +1,19 @@
 import React, { useEffect, useState } from "react";
 import "../Home.css";
-import MultiPost from "./MultiPost";
-import Navbar from "./Navbar";
+import MultiPost from "./home";
+import Navbar from "../components/Navbar";
 import client from "../client.js";
 import { Link, useParams } from "react-router-dom";
+// src/components/Item.js
+import { useDispatch } from 'react-redux';
+import { addToCart } from '../redux/cartSlice';
 
 function SinglePost() {
   /* how to pass the datt from the "Home page to the single post.
   slighly confused worst cones to worst I could make another api call? */
   const [singlePost, setSinglePost] = useState([]);
   const { slug } = useParams();
+  const dispatch = useDispatch()
   useEffect(() => {
     client
       .fetch(
@@ -68,8 +72,16 @@ function SinglePost() {
               {singlePost.description}
             </article>
             <div className="w-full h-[200px] flex justify-center items-center">
-              <button className="w-[100px] h-[50px] bg-white text-black text-lg rounded-sm">
-                Add To Cart
+              <button className="w-[100px] h-[50px] bg-white text-black text-lg rounded-sm"
+                onClick={() =>
+                  dispatch(addToCart({
+                    id: "test",//singlePost.id,
+                    title:"test", //singlePost.title,
+                    image: "test",//singlePost.image,
+                    price: "test"//singlePost.price,
+                  }))
+                }>Add to Cart
+
               </button>
             </div>
           </div>
@@ -79,4 +91,4 @@ function SinglePost() {
   );
 }
 
-//export default SinglePost;
+export default SinglePost;
