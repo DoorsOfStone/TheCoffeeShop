@@ -74,11 +74,12 @@ function SinglePost() {
             <div className="w-full h-[200px] flex justify-center items-center">
               <button className="w-[100px] h-[50px] bg-white text-black text-lg rounded-sm"
                 onClick={() =>
+                  // this is sending to the cart through the redux store. Basically like a middle man that keeps track of the state of objects.
                   dispatch(addToCart({
-                    id: "test",//singlePost.id,
-                    title:"test", //singlePost.title,
-                    image: "test",//singlePost.image,
-                    price: "test"//singlePost.price,
+                    id: singlePost.id,
+                    title:singlePost.title,
+                    image:singlePost.image,
+                    price:singlePost.price,
                   }))
                 }>Add to Cart
 
