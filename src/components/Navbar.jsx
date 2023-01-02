@@ -4,7 +4,6 @@ import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import { Link } from "react-router-dom";
 import "../Home.css";
-import Total from "./Total";
 import CartItemCard from "./CartItemCard";
 import { useSelector } from "react-redux";
 function Navbar() {
