@@ -22,12 +22,11 @@ function MultiPost() {
       )
       .then((data) => {
         setMultiPostData(data);
-        console.log(data);
       })
       .catch(console.error);
   }, []);
   return (
-    <div className="home w-full min-h-screen ">
+    <div className="home  ">
       <Navbar />
       <Banner />
       <div className="flex justify-center flex-row flex-wrap w-full my-5 ">
