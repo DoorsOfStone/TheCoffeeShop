@@ -5,7 +5,7 @@ function ProductCard({ image, name, slug, price, description }) {
   return (
     <div className="my-40 w-3/5 h-[600px]  bg-[#ffd59e] xs:flex-col flex md:flex-row justify-center items-center md:rounded-3xl">
       <div className="xs:w-full xs:h-1/3 md:w-1/2 md:h-full flex justify-center ">
-        <img className="w-full bg-transparent md:rounded-l-2xl" src={image} />
+        <img className="w-full bg-transparent md:`rounded-l-2xl" src={image} />
       </div>
       <div className=" xs:w-full xs:h-2/3  md:w-1/2 md:h-full flex flex-col justify-center p-2 text-white bg-black md:rounded-r-2xl ">
         <div className="xs:w-full xs:h-1/4 md:w-full md:h-1/3 flex flex-col justify-start items-start p-5">

@@ -54,8 +54,9 @@ function Navbar() {
                   />
                 ))}
               </div>
-              <div className="w-full p-2 flex justify-center items-center mt-40 text-white">
-                Total: $ {cart.reduce((a, c) => a + c.price * c.quantity, 0)}
+              <div className="w-full p-2 flex justify-center items-center mt-40 text-white font-extralight text-lg">
+                Total: $
+                {cart.reduce((a, c) => Math.floor(a + c.price * c.quantity), 0)}
               </div>
             </div>
           </div>

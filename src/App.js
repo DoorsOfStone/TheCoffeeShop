@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route element={<MultiPost />} path="/" exact />
-        <Route element={<SinglePost />} path="/:slug" exact />
+        <Route element={<SinglePost />} path="/:slug" />
       </Routes>
     </BrowserRouter>
   );
